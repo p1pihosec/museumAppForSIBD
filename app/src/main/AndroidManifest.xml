@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.museumapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/museum_logo_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity android:name=".LoginOrders"
+            android:label="Import orders"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+    </activity>
+        <activity
+            android:name=".ImportOrders"
+            android:label="Orders"
+            android:parentActivityName=".LoginOrders"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OrderProcessed"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PersonInfo"
+            android:label="Personal details"
+            android:parentActivityName=".TicketsPage"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TicketsPage"
+            android:label="Tickets"
+            android:parentActivityName=".SecondActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/museum_name"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

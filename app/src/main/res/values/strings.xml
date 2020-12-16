@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Museum App</string>
+    <string name="import_order">Ипорт заказа</string>
+    <string name="go_to_the_order">О музее</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="photo_name1">museum_photo</string>
+    <string name="museum_name">Minsk Museum</string>
+    <string name="about_museum">The Minsk Museum was founded in 1753 and opened its doors in 1759. It was the first national museum to cover all fields of human knowledge, open to visitors from across the world. </string>
+    <string name="about_museum1"> Enlightenment ideals and values – critical scrutiny of all assumptions, open debate, scientific research, progress and tolerance – have marked the Museum since its foundation. </string>
+    <string name="about_museum2"> The Museum is driven by an insatiable curiosity for the world, a deep belief in objects as reliable witnesses and documents of human history, sound research, as well as the desire to expand and share knowledge. </string>
+    <string name="about_museum3"> The British Museum starts from the very first moment you put your eyes on it with the Ionic Columns. The truth is that this museum is one of the ancient ones in the world, so you can also enjoy visiting just the architecture. </string>
+    <string name="about_museum4"> Each year the BM is visited by more than 5 million visitors. Other of the main reasons to visit it is the fact that you can do it for free. </string>
+
+    <string name="about">О музее</string>
+    <string name="museum_logo">Museum logo</string>
+    <string name="select_date">Выберите дату</string>
+    <string name="select_time">Выбор времени</string>
+    <string name="select_a_date">Выберите дату</string>
+    <string name="select_a_timeslot">Выберите время</string>
+    <string name="select_your_ticket">Select your ticket</string>
+    <string name="select_ticket_type">Тип экскурсии</string>
+    <string name="total_price">Итоговая цена:</string>
+    <string name="select_guide">Выберите экскурсовода</string>
+    <string name="input_prompts">Заполните поля:</string>
+    <string name="name">Имя:</string>
+    <string name="phone_number">Номер телефона:</string>
+    <string name="submit">Ввести</string>
+    <string name="order">Заказ оформлен</string>
+    <string name="successful">successful</string>
+    <string name="back_to_start">Вернуться в начало</string>
+    <string name="_375">+375 (</string>
+    <string name="select_excursion_type">Выберите тип экскурсии</string>
+    <string name="select_date1">Выбор даты</string>
+    <string name="select_time1">Выбор времени</string>
+    <string name="enter_tickets">Выберите количество пропускных билетов</string>
+
+    <string-array name="spinExcursionType">
+        <item>Обзорная</item>
+        <item>Расширенная</item>
+    </string-array>
+
+    <string-array name="spinExcursionDate">
+        <item>Обзорная</item>
+        <item>Расширенная</item>
+    </string-array>
+
+    <string-array name="spinExcursionGuide">
+        <item>Савченко А.Д.</item>
+        <item>Бышовец А.Н.</item>
+        <item>Гончаренко В.М.</item>
+        <item>Блохин О.Г.</item>
+        <item>Овчинников С.И.</item>
+    </string-array>
+    <string-array name="spinPersonNum">
+        <item>1 человек</item>
+        <item>2 человека</item>
+        <item>3 человека</item>
+        <item>4 человека</item>
+        <item>5 человек</item>
+        <item>6 человек</item>
+        <item>7 человек</item>
+        <item>8 человек</item>
+        <item>9 человек</item>
+        <item>10 человек</item>
+        <item>11 человек</item>
+        <item>12 человек</item>
+        <item>13 человек</item>
+        <item>14 человек</item>
+        <item>15 человек</item>
+        <item>16 человек</item>
+        <item>17 человек</item>
+        <item>18 человек</item>
+        <item>19 человек</item>
+        <item>20 человек</item>
+
+    </string-array>
+
+
+
+
+</resources>
