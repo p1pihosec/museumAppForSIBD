@@ -1,82 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
-
-    <TextView
-        android:id="@+id/selectExcType"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Тип экскурсии"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorPrimaryDark"/>
-
-    <Spinner
-        android:id="@+id/spinExcursionType"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:layout_below="@+id/selectExcType"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:id="@+id/selectDate"
-        android:layout_width="wrap_content"
+        android:hint="Введите имя"/>
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Дата и время"
-        android:layout_below="@+id/spinExcursionType"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorPrimaryDark"/>
-
-    <Spinner
-        android:id="@+id/spinExcursionDate"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:layout_below="@+id/selectDate"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-
-    <TextView
-        android:id="@+id/selectGuide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Экскурсовод"
-        android:layout_below="@+id/spinExcursionDate"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorPrimaryDark"/>
-
-    <Spinner
-        android:id="@+id/spinExcursionGuide"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:layout_below="@+id/selectGuide"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:id="@+id/selectPersonNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Количество человек"
-        android:layout_below="@+id/spinExcursionGuide"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/colorPrimaryDark"/>
-
-    <Spinner
-        android:id="@+id/spinPersonNum"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:layout_below="@+id/selectPersonNum"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
-
-
+        android:hint="Введите год рождения"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -97,4 +34,4 @@
             android:text="Удалить"
             android:onClick="delete"/>
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

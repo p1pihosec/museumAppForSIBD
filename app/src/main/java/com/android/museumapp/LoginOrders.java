@@ -22,15 +22,14 @@ public class LoginOrders extends AppCompatActivity {
     private Button button;
     private EditText editTextName;
     private EditText editTextPhone;
-    private static String name;
+    public static String name;
     private static String phone;
     private Cursor tableCursor;
-
     DatabaseHelper databaseHelper;
     SQLiteDatabase db;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_orders);
 
@@ -45,6 +44,11 @@ public class LoginOrders extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 name = editTextName.getText().toString();
+
+                Intent intent1 = new Intent(LoginOrders.this, ImportOrders.class); /*Пытаюсь перенести значение в другой класс*/
+                intent1.putExtra("loginName", name);
+                startActivity(intent1);
+
                 phone = editTextPhone.getText().toString();
 
                 databaseHelper = new DatabaseHelper(getApplicationContext());
