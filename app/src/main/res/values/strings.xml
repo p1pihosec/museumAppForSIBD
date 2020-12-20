@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Museum App</string>
-    <string name="import_order">Ипорт заказа</string>
+    <string name="import_order">Импорт заказа</string>
     <string name="go_to_the_order">О музее</string>
     <string name="todo">TODO</string>
     <string name="title_activity_second">SecondActivity</string>
@@ -14,12 +14,11 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="photo_name1">museum_photo</string>
-    <string name="museum_name">Minsk Museum</string>
-    <string name="about_museum">The Minsk Museum was founded in 1753 and opened its doors in 1759. It was the first national museum to cover all fields of human knowledge, open to visitors from across the world. </string>
-    <string name="about_museum1"> Enlightenment ideals and values – critical scrutiny of all assumptions, open debate, scientific research, progress and tolerance – have marked the Museum since its foundation. </string>
-    <string name="about_museum2"> The Museum is driven by an insatiable curiosity for the world, a deep belief in objects as reliable witnesses and documents of human history, sound research, as well as the desire to expand and share knowledge. </string>
-    <string name="about_museum3"> The British Museum starts from the very first moment you put your eyes on it with the Ionic Columns. The truth is that this museum is one of the ancient ones in the world, so you can also enjoy visiting just the architecture. </string>
-    <string name="about_museum4"> Each year the BM is visited by more than 5 million visitors. Other of the main reasons to visit it is the fact that you can do it for free. </string>
+    <string name="museum_name">Минский музей</string>
+    <string name="about_museum">Минский музей был основан в 1753 году и открыл свои двери в 1759 году. Это был первый национальный музей, охватывающий все области человеческих знаний, открытый для посетителей со всего мира. </string>
+    <string name="about_museum1"> Музеем движет ненасытное любопытство к миру, глубокая вера в предметы как надежные свидетели и документы истории человечества, обоснованные исследования, а также желание расширять и делиться знаниями. </string>
+    <string name="about_museum2"> Знакомство с минским музеем начинается с первого взгляда на Ионные колонны. По правде говоря, этот музей - один из самых древних в мире, поэтому вы также можете получить удовольствие от посещения только архитектуры. </string>
+    <string name="about_museum3"> Ежегодно Минский музей посещают более 5 миллионов посетителей. Еще одна из основных причин посетить его - это то, что вы можете сделать это бесплатно. </string>
 
     <string name="about">О музее</string>
     <string name="museum_logo">Museum logo</string>

@@ -81,7 +81,7 @@
                 android:text="@string/about_museum"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="5dp"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -107,27 +107,11 @@
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/about_museum4"
-                android:textColor = "@color/colorPrimaryDark"
-                android:layout_marginTop="10dp"
-                android:textSize="16sp"/>
-
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_museum4"
-                android:textColor = "@color/colorPrimaryDark"
-                android:layout_marginTop="10dp"
-                android:textSize="16sp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Opening hours"
+                android:text="Часы работы"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="24sp"
@@ -136,7 +120,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Monday                   10:00-23:00"
+                android:text="Понедельник               10:00-22:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -144,7 +128,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tuesday                  10:00-23:00"
+                android:text="Вторник                         10:00-23:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -152,7 +136,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Wednesday             10:00-23:00"
+                android:text="Среда                             10:00-23:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -160,7 +144,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thursday                 10:00-23:00"
+                android:text="Четверг                          10:00-23:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -168,7 +152,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Friday                       10:00-23:00"
+                android:text="Пятница                         10:00-23:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -176,7 +160,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Saturday                  10:00-23:00"
+                android:text="Суббота                          10:00-23:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -184,7 +168,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sunday                     10:00-23:00"
+                android:text="Воскресенье                 10:00-23:00"
                 android:textColor = "@color/colorPrimaryDark"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"/>
@@ -196,7 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:text="@string/go_to_the_order" />
+                android:text="Перейти к оформлению заказа" />
 
         </LinearLayout>
 

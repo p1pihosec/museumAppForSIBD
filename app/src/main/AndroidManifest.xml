@@ -11,37 +11,36 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
         <activity android:name=".LoginOrders"
-            android:label="Import orders"
+            android:label="Импорт заказов"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait">
+            >
     </activity>
         <activity
             android:name=".ImportOrders"
-            android:label="Orders"
+            android:label="Заказы"
             android:parentActivityName=".LoginOrders"
-            android:screenOrientation="portrait"/>
+            />
         <activity android:name=".OrderProcessed"
-            android:screenOrientation="portrait"/>
+            />
         <activity
             android:name=".PersonInfo"
             android:label="Personal details"
             android:parentActivityName=".TicketsPage"
             android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
+            />
         <activity
             android:name=".TicketsPage"
-            android:label="Tickets"
+            android:label="Оформление заказа"
             android:parentActivityName=".SecondActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
+            />
         <activity
             android:name=".SecondActivity"
             android:label="@string/museum_name"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

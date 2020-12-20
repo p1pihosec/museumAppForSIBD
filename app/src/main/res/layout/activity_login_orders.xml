@@ -25,29 +25,42 @@
         android:layout_height="150dp"
         android:src="@drawable/ic_people_black_24dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginTop="160dp"/>
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Import orders"
+        android:text="Импорт заказов"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="100dp"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your phone number to import orders"
+        android:text="Введите свои персональные данные для импорта заказов"
         android:textSize="20sp"
         android:textStyle="italic"
         android:textColor="@color/colorPrimaryDark"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="375dp"/>
+        android:textAlignment="center"
+        android:layout_marginTop="325dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView2"
+        android:autofillHints="" />
 
     <com.santalu.maskedittext.MaskEditText
         android:id="@+id/numberInput"
@@ -64,7 +77,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_to_the_order"
+        android:text="Импортировать"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="540dp"/>
 

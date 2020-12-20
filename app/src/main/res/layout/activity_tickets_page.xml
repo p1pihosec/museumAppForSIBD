@@ -130,7 +130,7 @@
         android:id="@+id/addButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Оформить заказ"
         android:layout_below="@+id/numberInput"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
