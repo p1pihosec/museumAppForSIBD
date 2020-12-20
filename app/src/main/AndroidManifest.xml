@@ -10,37 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".LoginOrders"
+<!--
+        <activity android:name=".UserActivity"></activity>
+-->
+        <activity
+            android:name=".LoginOrders"
             android:label="Импорт заказов"
-            android:parentActivityName=".MainActivity"
-            >
-    </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".ImportOrders"
             android:label="Заказы"
-            android:parentActivityName=".LoginOrders"
-            />
-        <activity android:name=".OrderProcessed"
-            />
+            android:parentActivityName=".LoginOrders" />
+        <activity android:name=".OrderProcessed" />
         <activity
             android:name=".PersonInfo"
             android:label="Personal details"
             android:parentActivityName=".TicketsPage"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TicketsPage"
             android:label="Оформление заказа"
             android:parentActivityName=".SecondActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SecondActivity"
             android:label="@string/museum_name"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"
-            >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

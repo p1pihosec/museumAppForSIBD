@@ -33,7 +33,6 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:onClick="backStart"
         android:text="@string/back_to_start" />
 
 </RelativeLayout>

@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import java.util.EventListener;
+
+import java.util.ArrayList;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.Objects;
 
 public class LoginOrders extends AppCompatActivity {
@@ -22,7 +24,7 @@ public class LoginOrders extends AppCompatActivity {
     private EditText editTextPhone;
     private static String name;
     private static String phone;
-    private Cursor userCursor;
+    private Cursor tableCursor;
 
     DatabaseHelper databaseHelper;
     SQLiteDatabase db;
@@ -47,20 +49,33 @@ public class LoginOrders extends AppCompatActivity {
 
                 databaseHelper = new DatabaseHelper(getApplicationContext());
                 db = databaseHelper.getWritableDatabase();
-                userCursor =  db.rawQuery("select * from "+ DatabaseHelper.TABLE1, null);
-                String[] names = new String[] {DatabaseHelper.CUSTOMER_NAME};
+                tableCursor =  db.rawQuery("select * from "+ DatabaseHelper.TABLE1, null);
 
-                userCursor =  db.rawQuery("select * from "+ DatabaseHelper.TABLE1, null);
-                String[] phones = new String[] {DatabaseHelper.PHONE_NUMBER};
+                List <String> names = new ArrayList<>();
+                List <String> phones = new ArrayList<>();
 
+                if (tableCursor.moveToFirst()){
+                    do {
+                        names.add(tableCursor.getString(5)); // индекс колонки с именем пользователя
+                        phones.add(tableCursor.getString(6)); //индекс колонки с номером телефона
+                    } while(tableCursor.moveToNext());
+                }
+                tableCursor.close();
+                db.close();
 
-                for(int i=0; i<names.length && i<phones.length; i++){
-                    if (phones[i] == phone && names[i] == name) {
-                        Intent intent = new Intent(LoginOrders.this, ImportOrders.class);
-                        startActivity(intent);
-                    }else if(phones[i] != phone && names[i] != name){
-                        Toast.makeText(getApplicationContext(), "Пользователь с такими данными отсутсвует" + names[i] + phones[i], Toast.LENGTH_SHORT).show();
+                int i = 0;
+                boolean isUserExists = false;
+                for (String nameTable:names) {
+                    if (phones.get(i).equals(phone) && nameTable.equals(name)) {
+                        isUserExists = true;
                     }
+                    i++;
+                }
+                if (isUserExists) {
+                    Intent intent = new Intent(LoginOrders.this, ImportOrders.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Пользователь с такими данными отсутсвует", Toast.LENGTH_SHORT).show();
                 }
             }
         });
