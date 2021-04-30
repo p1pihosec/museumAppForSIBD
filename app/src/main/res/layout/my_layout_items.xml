@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="Имя заказчика: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="М. телефон: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/text1"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Дата и время: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/text2"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Кол-во человек: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/text3"/>
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Экскурсовод: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/text4"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Экскурсовод: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/text5"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>

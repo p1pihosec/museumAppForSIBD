@@ -31,7 +31,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Импорт заказов"
+        android:text="База заказов"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
@@ -42,7 +42,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Введите свои персональные данные для импорта заказов"
+        android:text="Введите свои персональные данные для входа в базу заказов"
         android:textSize="20sp"
         android:textStyle="italic"
         android:textColor="@color/colorPrimaryDark"
@@ -62,14 +62,12 @@
         android:layout_below="@+id/textView2"
         android:autofillHints="" />
 
-    <com.santalu.maskedittext.MaskEditText
+    <EditText
         android:id="@+id/numberInput"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint="@string/phone_number"
-        android:inputType="phone"
-        android:text="@string/_375"
-        app:met_mask="+375 (##) ### ## ##"
+        android:hint="Пароль:"
+        android:inputType="textPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp"/>
 

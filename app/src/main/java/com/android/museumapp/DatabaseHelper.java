@@ -2,11 +2,9 @@ package com.android.museumapp;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.database.sqlite.SQLiteQueryBuilder;
 import android.util.Log;
 
 import java.io.File;
@@ -29,9 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String CUSTOMER_NAME = "customer_name";
     public static final String PHONE_NUMBER = "phone_num";
 
-
     private Context myContext;
-    SQLiteOpenHelper databaseOpenHelper;
 
     DatabaseHelper(Context context) {
         super(context, DB_NAME, null, SCHEMA);
@@ -40,12 +36,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE1);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE1);
         onCreate(db);
     }
 
@@ -81,7 +76,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public SQLiteDatabase open() throws SQLException {
-
         return SQLiteDatabase.openDatabase(DB_PATH, null, SQLiteDatabase.OPEN_READWRITE);
     }
 
@@ -101,6 +95,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
-
-
 }

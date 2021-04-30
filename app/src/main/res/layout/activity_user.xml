@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/user_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <EditText
-        android:id="@+id/name"
+        android:padding="16dp"
+        android:id="@+id/excType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите имя"/>
+        android:hint="Введите дату"/>
     <EditText
-        android:id="@+id/year"
+        android:padding="16dp"
+        android:id="@+id/excPersonNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите год рождения"/>
+        android:hint="Введите количество человек"/>
+
     <LinearLayout
+        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">

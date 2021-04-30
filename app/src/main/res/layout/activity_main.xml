@@ -22,26 +22,41 @@
             android:src="@drawable/museum_logo11" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/button1"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="500dp"
         android:onClick="onClick"
         android:text="@string/go_to_the_order"
         android:background="@color/Button1"
-        android:textColor="@android:color/white" />
 
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="610dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button1"
         android:onClick="onClick"
-        android:text="@string/import_order"
+        android:text="Оформить заказ"
+        android:background="@color/Button1"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button2"
+        android:onClick="onClick"
+        android:text="База заказов"
         android:background="@color/Button2"
         android:textColor="@android:color/white"
         />

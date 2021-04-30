@@ -15,22 +15,22 @@
 -->
         <activity
             android:name=".LoginOrders"
-            android:label="Импорт заказов"
-            android:parentActivityName=".MainActivity"></activity>
+            android:label="База заказов"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserActivity"
+            android:label="Редактирование заказа"
+            android:parentActivityName=".ImportOrders" />
+
         <activity
             android:name=".ImportOrders"
             android:label="Заказы"
             android:parentActivityName=".LoginOrders" />
         <activity android:name=".OrderProcessed" />
         <activity
-            android:name=".PersonInfo"
-            android:label="Personal details"
-            android:parentActivityName=".TicketsPage"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".TicketsPage"
             android:label="Оформление заказа"
-            android:parentActivityName=".SecondActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SecondActivity"
